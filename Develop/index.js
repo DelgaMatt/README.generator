@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { title } = require('process');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -72,7 +71,6 @@ ${answers.description}
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [Contribute](#how to contribute)
 - [Tests](#tests)
 - [Questions?](#questions)
 
@@ -88,21 +86,11 @@ ${answers.installation}
 
 ${answers.usage}
 
-![alt text](assets/images/screenshot.png)
-
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
 ## License
 
 ${answers.liscense}
 
-## How to Contribute
+## Credits
 
 ${answers.futureContributors}
 
@@ -111,6 +99,7 @@ ${answers.futureContributors}
 ${answers.test}
 
 ## Questions
+
 Here is a link to my Github profile:
 ${answers.github}
 
