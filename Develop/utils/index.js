@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require("./generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -58,62 +59,14 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-const generateREADME = (answers) => {
-return `# ${answers.title}
-
-## Description
-
-${answers.description}
-
-## Table of Contents (Optional)
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-- [Tests](#tests)
-- [Questions?](#questions)
-
-## Badges
-
-${answers.badges}
-
-## Installation
-
-${answers.installation}
-
-## Usage
-
-${answers.usage}
-
-## License
-
-${answers.liscense}
-
-## Credits
-
-${answers.futureContributors}
-
-## Tests
-
-${answers.test}
-
-## Questions
-
-Here is a link to my Github profile:
-${answers.github}
-
-If you have any further questions about the application or how you can contribute, you can reach me by email at:
-${answers.email}
-`};
-
 // TODO: Create a function to initialize app
 const init = () => {
-    inquirer.prompt(questions).then (answers => {
+    inquirer.prompt(questions).then(answers => {
         fs.writeFile("README.md", generateREADME(answers), (err) => {
-            err ? console.error(err) : console.log('Success!')
+            err ? console.error(err) : console.log('Your README has been generated!');
         })
     })
 }
 // Function call to initialize app
 init();
+
