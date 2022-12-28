@@ -54,7 +54,7 @@ const questions = [
     {   //liscence option list
         type: 'checkbox',
         name: 'license',
-        choices: ['MIT',  'Apache v2.0', 'GNU General Public Liscense v3.0']
+        choices: ['MIT',  'Apache_v2.0', 'GNU General Public Liscense v3.0']
     },
 ];
 
