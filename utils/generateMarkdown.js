@@ -64,8 +64,7 @@ function generateMarkdown(data) {
   ${data.usage}
   ${licenseSection}
   ## <ins>Contributing
-  Created by:
-  ${data.github}
+  Created by: ${data.github}
   <br>
   ${data.contribute}
   ## <ins>Tests

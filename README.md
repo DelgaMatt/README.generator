@@ -13,6 +13,9 @@
   To install this project, clone this project repo onto your local machine
   ## <ins>Usage
   To use this application after installation, open the integrated terminal on the index.js file and run 'node index.js'. Follow the prompt and answer the questions. When the questions have finished, there will be a new or rewritten README.md file with user's input
+
+  https://user-images.githubusercontent.com/115049801/210300886-d1364997-e092-440e-b273-cd5158109e4e.mp4
+
   ## <ins>License
   This app is covered under the [MIT License](https://opensource.org/licenses/MIT)<br>
   Copyright (C) Matthew Delgado 2023

@@ -56,7 +56,7 @@ const questions = [
 //Function to initialize app and write file
 const initReadme = () => {
     inquirer.prompt(questions).then((answers) => {
-        fs.writeFile("README.md", generateMarkdown(answers), (err) => {
+        fs.writeFile("test.md", generateMarkdown(answers), (err) => {
         err ? console.error(err) : console.log('Your README has been generated!');
         })
     })
