@@ -36,11 +36,6 @@ const questions = [
         name: 'usage',
         message: 'How would a user use your application?'
     },
-    // {   //previous contributors
-    //     type: 'confirm',
-    //     name: 'contributors',
-    //     message: 'Where there any contributors on this project?'
-    // },
     {   // contribution guidelines
         type: 'input',
         name: 'futureContributors',
@@ -51,10 +46,10 @@ const questions = [
         name: 'test',
         message: 'How would a user test your application?'
     },
-    {   //liscence option list
-        type: 'checkbox',
+    {   //license option list
+        type: 'list',
         name: 'license',
-        choices: ['MIT',  'Apache_v2.0', 'GNU General Public Liscense v3.0']
+        choices: ['MIT License', 'Apache 2.0 License', 'GNU General Public Liscense v3.0']
     },
 ];
 
