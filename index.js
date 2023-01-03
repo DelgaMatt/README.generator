@@ -58,9 +58,9 @@ const init = () => {
     inquirer.prompt(questions).then((answers) => {
         fs.writeFile("README.md", generateMarkdown(answers), (err) => {
         err ? console.error(err) : console.log('Your README has been generated!');
-})
-})
-    }
+        })
+    })
+}
 
 init();
 
