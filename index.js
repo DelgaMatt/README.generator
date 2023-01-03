@@ -34,27 +34,27 @@ const questions = [
     {   //usage information
         type: 'input',
         name: 'usage',
-        message: 'How would a user use your application?'
+        message: 'How would one use your application?'
     },
     {   // contribution guidelines
         type: 'input',
-        name: 'futureContributors',
-        message: 'What would a user need to do in order to contribute to your application?'
+        name: 'contribute',
+        message: 'Enter instructions for how to contribute to your project'
     },
     {   //test instructions
         type: 'input',
         name: 'test',
-        message: 'How would a user test your application?'
+        message: 'How would one test this application?'
     },
     {   //license option list
         type: 'list',
         name: 'license',
-        choices: ['MIT License', 'Apache 2.0 License', 'GNU General Public Liscense v3.0']
+        choices: ['MIT License', 'Apache 2.0 License', 'GNU General Public License v3.0']
     },
 ];
 
 //Function to initialize app and write file
-const init = () => {
+const initReadme = () => {
     inquirer.prompt(questions).then((answers) => {
         fs.writeFile("README.md", generateMarkdown(answers), (err) => {
         err ? console.error(err) : console.log('Your README has been generated!');
@@ -62,5 +62,5 @@ const init = () => {
     })
 }
 
-init();
+initReadme();
 
