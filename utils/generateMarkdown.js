@@ -36,7 +36,7 @@ function renderLicenseSection(license) {
   if(!license){
     return ``;
   } else {
-    return `## <ins>License
+    return `## License
   This app is covered under the [${license}](${licenseLink})<br>
   Copyright (C) Matthew Delgado 2023`
   }
@@ -49,27 +49,27 @@ function generateMarkdown(data) {
 
   return `# ${data.title}
   ${licenseBadge}
-  ## <ins>Description
+  ## Description
   ${data.description}
-  ## <ins>Table of Contents
+  ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribute](#contributing)
   - [License](#license)
   - [Tests](#tests)
   - [Questions?](#questions)
-  ## <ins>Installation
+  ## Installation
   ${data.installation}
-  ## <ins>Usage
+  ## Usage
   ${data.usage}
   ${licenseSection}
-  ## <ins>Contributing
+  ## Contributing
   Created by: ${data.github}
   <br>
   ${data.contribute}
-  ## <ins>Tests
+  ## Tests
   ${data.test}
-  ## <ins>Questions
+  ## Questions
   View this project repository on [Github](https://github.com/${data.github})<br>
   If you have any further questions about the application or how you can contribute, you can reach me by email at: ${data.email}
 `;
